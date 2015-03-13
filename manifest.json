@@ -1,0 +1,15 @@
+{
+    "name": "kmadclose",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description":  "A script which automatically closes the popout ad box",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://kissmanga.com/*"
+            ],
+            "js": ["myscript.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
